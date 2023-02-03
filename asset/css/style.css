@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Martel:wght@200&family=Parisienne&family=Saira+Condensed:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn{
+    background-color: #ebba19;
+    border-radius: 25px;
+    padding: 7px 46px;
+    text-align: center;
+    color: azure;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ebba19c9;
+}
+
+header{
+    background: url(../img/hero-bg.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    padding: 15px;
+    width: 80%;
+    justify-content: flex-start;
+    margin: 0px auto;
+}
+nav h1{
+    color: azure;
+    padding: 5px 15px;
+}
+nav ul{
+    display: flex;
+    margin-left: 21%;
+}
+nav ul li.menu{
+    list-style: none;
+    padding: 5px;
+    margin: 15px;
+    color: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav .navSvg{
+    display: flex;
+    list-style: none;
+    padding: 5px 3px;
+    margin: 15px 0;
+    color: azure;
+    margin-left: 5%;
+}
+nav .navSvg li{
+    padding-right: 10px;
+}
+nav ul li.menu a:hover, nav .navSvg svg:hover{
+    color: #ebba19;
+    stroke: #ebba19;
+}
+nav .navSvg{
+    cursor: pointer;
+    align-items: flex-end;
+}
+nav .navSvg .btn{
+    background-color: #ebba19;
+    border-radius: 25px;
+    padding: 7px 31px;
+    text-align: center;
+    text-transform: capitalize;
+}
+header .texte{
+    width: 40%;
+    margin: 10%; 
+}
+header .texte h2{
+    font-size: 25px;
+    padding: 2px 0 15px;
+    color: white;
+font-family: 'Parisienne', cursive;
+    text-transform: capitalize;
+}
+header .texte p{
+    color: azure;
+    padding: 2px 0 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+header .texte .btn{
+    border-radius: 25px;
+    padding: 9px 39px;
+    color: azure;
+    text-transform: capitalize;
+    background-color: #ebba19;
+}
+
+.section_1{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    margin: 4rem auto;
+    width: 50%;
+    grid-gap: 2%;
+}
+.section_1 .tasty{
+    display: grid;
+    grid-template-columns: 40% 64%;
+    background-color: #000;
+    border-radius: 5px;
+    grid-gap: 2%;
+}
+.section_1  .tasty .tasty_1 img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid #ebba19;
+    margin: 10px;
+}
+.section_1  .tasty .tasty_1 img:hover, .section_2 .container .images img:hover{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.section_1  .tasty .part2 h2{
+    margin: 10px 0 0;
+    color: azure;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.section_1  .tasty .part2 p.span{
+    color: azure;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+.section_1  .tasty .part2 span{
+    color: azure;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.section_1  .tasty .part2 .btn{
+    display: grid;
+    grid-template-columns: 63% 20%;
+    width: 60%;
+    padding: 7px 5px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.section_1  .tasty .part2 .btn p{
+    text-transform: capitalize;
+}
+.section_2{
+    width: 90%;
+    margin: 15px auto;
+}
+.section_2 h3{
+   text-align: center;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   font-size: 20px;
+}
+.section_2 ul{
+   display: flex;
+   display: flex;
+   justify-content: center;
+   margin: 15px;
+   padding: 10px;
+}
+.section_2 ul li{
+   list-style: none;
+   padding: 3px 18px;
+   color: #000;
+   text-transform: capitalize;
+   font-size: 15px;
+   border-radius: 25px;
+   margin: 3px 5px;
+}
+.section_2 ul li a{
+   color: #000;
+}
+.section_2 ul li.active {
+   background: #000;
+}
+.section_2 ul li.active a{
+   color: #fff;
+}
+.section_2 .containers{
+display: grid;
+grid-template-columns: repeat(auto-fill, 30%);
+width: 59%;
+grid-gap: 1%;
+margin: 5px auto;
+}
+.section_2 .container{
+background: #000;
+border-radius: 15px;
+border: none;
+}
+.section_2 .container .images{
+background: rgb(228, 228, 228);
+border-radius: 5px 5px 0 29px;
+border: none;
+height: 130px;
+}
+
+.section_2 .container .images img{
+    height: 90px;
+    width: 90px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.section_2 .container .texte{
+    color: azure;
+    font-size: 13px;
+    padding: 15px 15px 0px;
+    width: 85%;
+}
+.section_2 .container .texte h3{
+    text-align: initial;
+    padding-bottom: 8px;
+}
+.section_2 .container .prix{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    font-size: 14px;
+}
+.section_2 .container .prix .span{
+    align-self: self-end;
+}
+.section_2 .container .prix .svg{
+    background-color: #ebba19;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.section_2 .container .prix .svg svg{
+    margin: 6px;
+}
+
+.section_2 .btn{
+    border: none;
+    grid-column: span 3;
+    width: 27%;
+    margin: 25px auto;
+    margin-bottom: 100px;
+}
+.section_3{
+    background-color: #000;
+    height: 95vh;
+    margin: 15px 0;
+}
+.section_3 .container{
+    display: grid;
+    width: 75%;
+    grid-template-columns: 40% 45%;
+    grid-gap: 2%;
+    margin: 2px auto;
+}
+.section_3 .container img{
+    height: 550px;
+    margin: 15px;
+    padding: 10px;
+}
+.section_3 .texte{
+    color: azure;
+    margin: 15px;
+    position: relative;
+    top: 27%;
+    left: 30px;
+}
+.section_3 .texte p{
+    margin: 25px 0;
+}
+.section_4 {
+    margin: 35px auto;
+    width: 80%;
+}
+.section_4 h1{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.section_4 .contact{
+   display: grid;
+   grid-template-columns: 46% 43%;
+   grid-gap: 2%;
+}
+.section_4 .contact img{
+    width: 100%;
+    height: 252px;
+    border-radius: 15px;
+}
+.section_4 .contact_1 input, .section_4 .contact_1 select{
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px -1px 3px 1px #000;
+}
+.section_4 .contact_1 .btn{
+    border: none;
+    margin: 15px 1px;
+}
+.section_5 h1{
+    text-align: center;
+    margin: 25px 2px;
+    text-transform: capitalize;
+}
+.section_5 .commentaire{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 45% 45%;
+    margin: 15px auto;
+    grid-gap: 2%;
+}
+.section_5 .commentaire_1 .textCommentaire{
+    background: #000;
+    color: azure;
+    padding: 15px 15px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.section_5 .commentaire_1 .textCommentaire h1{
+    margin-top: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: initial;
+    margin-bottom: 10px;
+}
+.section_5 .commentaire_1 .photo{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 12px 15px 12px;
+    border-color: transparent transparent gold transparent;
+    margin: 13px 10px 5px 29px;
+}
+.section_5 .commentaire_1 img{
+    height: 80px;
+    margin: 12px 2px 4px -39px;
+    border-radius: 50%;
+    border: 4px solid #ebba19;
+}
+.section_6{
+    background-color: #000;
+    color: azure;
+    margin: 120px 0 0;
+    padding: 25px;
+    text-align: center;
+}
+.section_6 li{
+    list-style: none;
+}
+.section_6 h1{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.section_6 .footer{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 80%;
+    margin: 5px auto;
+}
+.section_6 .contact .icone svg{
+    stroke:#000;
+    height: 20px;
+    width: 25px;
+    vertical-align: top;
+}
+.section_6 .contact .icone{
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px 5px;
+}
+.section_6 .contact .icone li{
+    background-color: azure;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.section_6 .contact .icone li:hover{
+    background-color: rgb(31, 68, 68);
+}
